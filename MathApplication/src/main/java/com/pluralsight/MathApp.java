@@ -4,13 +4,13 @@ public class MathApp {
     public static void main(String[] args) {
         int bobSalary = 100000;
         int garySalary = 150000;
-        int highestSalary = (int) Math.max(bobSalary,garySalary);
+        int highestSalary = Math.max(bobSalary,garySalary);
 
         System.out.println("The highest salary is " + highestSalary);
 
         int carPrice = 5000;
         int truckPrice = 10000;
-        int lowestPrice = (int) Math.min(carPrice, truckPrice);
+        int lowestPrice = Math.min(carPrice, truckPrice);
 
         System.out.println("The lowest price is " + lowestPrice);
 
@@ -37,6 +37,17 @@ public class MathApp {
         double ytwo = 50;
 
         double distance = Math.sqrt(Math.pow((xtwo-xone),2)+Math.pow((ytwo-yone),2));
+
+        double input = distance;
+
+        System.out.println("salary : " + input);
+
+        // round half-up, no way control
+        // 1205.64
+        System.out.println("salary : " + String.format("%.2f", input));
+
+        // 1205.64
+        System.out.format("salary : %.2f", input);
 
         System.out.println("The distance between the two points are " + distance);
 

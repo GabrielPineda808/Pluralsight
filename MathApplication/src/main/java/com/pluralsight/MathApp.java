@@ -30,5 +30,16 @@ public class MathApp {
 
         double rng = Math.random();
         System.out.println("Here is a random number enjoy! " + rng);
+
+        double xone= 5;
+        double xtwo= 85;
+        double yone= 10;
+        double ytwo = 50;
+
+        double distance = Math.sqrt(Math.pow((xtwo-xone),2)+Math.pow((ytwo-yone),2));
+
+        System.out.println("The distance between the two points are " + distance);
+
+
     }
 }

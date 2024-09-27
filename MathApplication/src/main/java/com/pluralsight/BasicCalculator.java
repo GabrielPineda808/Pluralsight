@@ -6,16 +6,20 @@ public class BasicCalculator {
     static Scanner scanner = new Scanner(System.in);
     public static void main(String[] args) {
         System.out.println("Welcome to the Basic Calculator app! ENJOY! :)");
-        System.out.println("Enter the first number: ");
-         double num1 = scanner.nextDouble();
 
-        System.out.println("Enter the first number: ");
-        double num2  = scanner.nextDouble();
+        double num1 = choice();
+        double num2 = choice();
 
         scanner.nextLine();
 
         calc(num1,num2);
 
+    }
+
+    public static double choice(){
+        System.out.println("Enter a number: ");
+        double num = scanner.nextDouble();
+        return num;
     }
 
     public static String op(){

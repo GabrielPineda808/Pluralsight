@@ -13,7 +13,7 @@ public class BasicCalculator {
         double num2  = scanner.nextDouble();
 
         scanner.nextLine();
-        
+
         calc(op(), num1,num2);
 
     }

@@ -35,8 +35,8 @@ public class BasicCalculator {
     }
 
     public static void calc( double x, double y){
-        String operator = op().toUpperCase();
-        switch (operator){
+        
+        switch (op().toUpperCase()){
             case "A":
                 System.out.println(x+ " + " + y + " = " + (x + y));
                 break;

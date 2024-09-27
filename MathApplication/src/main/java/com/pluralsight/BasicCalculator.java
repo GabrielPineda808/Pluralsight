@@ -10,7 +10,6 @@ public class BasicCalculator {
         double num1 = choice();
         double num2 = choice();
 
-        scanner.nextLine();
 
         calc(num1,num2);
 
@@ -19,6 +18,7 @@ public class BasicCalculator {
     public static double choice(){
         System.out.println("Enter a number: ");
         double num = scanner.nextDouble();
+        scanner.nextLine();
         return num;
     }
 
@@ -35,7 +35,7 @@ public class BasicCalculator {
     }
 
     public static void calc( double x, double y){
-        
+
         switch (op().toUpperCase()){
             case "A":
                 System.out.println(x+ " + " + y + " = " + (x + y));

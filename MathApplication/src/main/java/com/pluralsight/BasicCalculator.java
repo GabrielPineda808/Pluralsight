@@ -14,7 +14,7 @@ public class BasicCalculator {
 
         scanner.nextLine();
 
-        calc(op(), num1,num2);
+        calc(num1,num2);
 
     }
 
@@ -30,7 +30,8 @@ public class BasicCalculator {
         return scanner.nextLine();
     }
 
-    public static void calc(String operator, double x, double y){
+    public static void calc( double x, double y){
+        String operator = op().toUpperCase();
         switch (operator){
             case "A":
                 System.out.println(x+ " + " + y + " = " + (x + y));
